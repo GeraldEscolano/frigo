@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
-    <link rel="styleheet" type="text/css" href="frigo.css" media="screen" />
-    <title>Frigidaire</title>  
+    <link rel="stylesheet" type="text/css" href="style_frigo.css" media="screen" />
+    <title>Frigidaire</title>
 </head>
 
 <body>
     <h1>FRIGIDAIRE VIRTUEL</h1>
 
-        <h3 id="ajouter1">Vous pouvez ajouter un nouveau produit<br>Saisissez le produit et sa quantité :</h1>
-        <div id="div1">
-            <input id="Produit" type="text" placeholder="Produit"> <input id="Quantite" type="text" placeholder="Quantite"> <input id="ajouter" type="submit" value="Ajouter">
-    <table> 
-        <tr>
-            <th>ID</th>
-            <th>Produit</th>
-            <th>Quantité</th>
-            <th>Actions</th>
-        </tr>
-        <tr class="liste"></tr>
-    </table>
-   
-    <script src="accueil.js"></script>
+    <h2>Vous pouvez ajouter un nouveau produit<br>Saisissez le produit et sa quantité :</h2>
+    <p id="confirm" class="message"></p>
+    <div>
+        <input id="Produit" type="text" placeholder="Produit" /> <input id="Quantite" type="text"
+            placeholder="Quantite" /> <input id="ajouter" type="submit" value="Ajouter" />
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produit</th>
+                    <th>Quantité</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="liste"></tbody>
+        </table>
+        <script src="accueil.js"></script>
 </body>
+<footer></footer>
+
 </html>
