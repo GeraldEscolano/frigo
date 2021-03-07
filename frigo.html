@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style_frigo.css" media="screen" />
+    <title>Frigidaire</title>
+</head>
+
+<body>
+    <h1>FRIGIDAIRE VIRTUEL</h1>
+    <h2>Vous pouvez ajouter un nouveau produit</h2>
+    <h3>Saisissez son nom et sa quantité :</h3>
+    <p id="confirm" class="message"></p>
+    <p id="confirm_del" class="message"></p>
+    <div>
+        <input id="Produit" type="text" placeholder="Produit" > <input id="Quantite" type="text" placeholder="Quantite" > <input id="ajouter" type="submit" value="Ajouter" >
+           
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Produit</th>
+                <th>Quantité</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="liste"></tbody>
+    </table>
+        <script src="frigo.js"></script>
+</body>
+<footer></footer>
+
+</html>
