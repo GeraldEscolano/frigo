@@ -15,33 +15,23 @@ body{
 
 h1{
     color: darkblue;
-    margin-left: 2em;
+    text-align: center;
+    
 }
 
-table thead{
-    background-color:deepskyblue;
+button{
+background-color: darkblue;
+border: none;
+padding: 7.5px 16px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+border-radius: 12px;
+margin-top: 32em;
+margin-left: 35em;
 }
-table, th, td {
-    border: 1px solid black;
-  }
-  table{
-      width:80%;
-      border-collapse: collapse;
-  }
 
-input{
-    margin-bottom: 2em;
-}
-p.message{
-    background-color: greenyellow;
-}
-input#plus{
-    background-color: green;
-    color: #fff;
-    margin:auto;
-}
-input#moins{
-    background-color: red;
-    color: #fff;
-    margin:auto;
+button a{
+    color: whitesmoke;
+    text-decoration: none;
 }
