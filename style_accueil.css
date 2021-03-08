@@ -23,15 +23,17 @@ button{
 background-color: darkblue;
 border: none;
 padding: 7.5px 16px;
-text-align: center;
-display: inline-block;
 font-size: 16px;
 border-radius: 12px;
-margin-top: 32em;
-margin-left: 35em;
+margin-top: 35%;
+margin-left: 39%;
 }
 
 button a{
     color: whitesmoke;
     text-decoration: none;
+}
+
+button:hover{
+    border:2px solid grey;
 }

@@ -8,27 +8,32 @@
 </head>
 
 <body>
-    <h1>VOICI LE CONTENU DU FRIGIDAIRE</h1>
-    <h2>Vous pouvez ajouter un nouveau produit</h2>
-    <h3>Saisissez son nom et sa quantité :</h3>
+        <!-- <button id="retour"><a href="accueil.html">RETOUR</a></button> -->
+        <h1>VOICI LE CONTENU DU FRIGIDAIRE</h1>
     <p id="confirm" class="message"></p>
     <p id="confirm_del" class="message_del"></p>
     <div>
-        <input id="Produit" type="text" placeholder="Produit" > <input id="Quantite" type="text" placeholder="Quantite" > <button id="ajouter" type="submit" >Ajouter</button>
-           
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Produit</th>
-                <th>Quantité</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody id="liste"></tbody>
-    </table>
+        <nav>
+            <ul>
+                <li><button class="nav"><a href="accueil.html">Accueil</a></button> </li>
+                <li><button class="nav" onclick="affiche_ajoute()" >Ajouter un produit</button></li>
+                <li><button class="nav" onclick="affiche_tri()">Recherche des produits par nom</button> </li>
+            </ul>
+        </nav>
+        <input id="produit" type="text" placeholder="Nom du produit" > <input id="quantite" type="text" placeholder="Quantite de produit" > <button id="ajouter" type="submit" >Ajouter</button>
+        <input type="text" id="recherche" onkeyup="trier_table()" placeholder="Recherche par nom de produit">
+        <table id="table_produits">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produit</th>
+                    <th>Quantité</th>
+                    <th>Actions </th>
+                </tr>
+            </thead>
+            <tbody id="liste"></tbody>
+        </table>
         <script src="frigo.js"></script>
 </body>
-<footer></footer>
 
 </html>
