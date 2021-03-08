@@ -68,6 +68,7 @@ p.message{
     margin-left: 25em;
     margin-right: 25em;
     border-radius: 12px;
+    margin-bottom: 0.2em;
 }
 p.message_del{
     background-color: red;
@@ -75,6 +76,7 @@ p.message_del{
     margin-left: 25em;
     margin-right: 25em;
     border-radius: 12px;
+    margin-bottom: 0.2em;
 }
 
 button{

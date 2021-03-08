@@ -52,8 +52,8 @@ function ajouter() {
     const url =
         "http://webmmi.iut-tlse3.fr/~jean-marie.pecatte/frigos/13/produits"
     let produit = {
-        nom: document.getElementById("Produit").value,
-        qte: quantite = document.getElementById("Quantite").value
+        nom: document.getElementById("produit").value,
+        qte: quantite = document.getElementById("quantite").value
     }
 
     if(produit.qte <= 0 || produit.nom=="") { throw new Error("La quantité est forcément un entier positif"); }
@@ -74,7 +74,7 @@ function ajouter() {
             console.log(dataJSON)
 
             document.getElementById("confirm").innerHTML = "Le produit: " + produit.nom + ", a bien été ajouté."
-            setTimeout(function () { window.location.reload(); document.getElementById("confirm"); }, 1000);
+            setTimeout(function () { window.location.reload(); document.getElementById("confirm"); }, 1500);
         })
         .catch((error) => {
             console.log(error)
@@ -162,7 +162,7 @@ function del(event) {
     fetch(url, fetchOptions)
         .then((response) => {
             document.getElementById("confirm_del").innerHTML = "Le produit: " + produit.nom + ", a bien été supprimé."
-            setTimeout(function () { window.location.reload(); document.getElementById("confirm_del"); }, 1000);
+            setTimeout(function () { window.location.reload(); document.getElementById("confirm_del"); }, 1500);
             return response.json()
         })
         .catch((error) => {
