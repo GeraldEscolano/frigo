@@ -10,8 +10,6 @@
 <body>
         <!-- <button id="retour"><a href="accueil.html">RETOUR</a></button> -->
         <h1>VOICI LE CONTENU DU FRIGIDAIRE</h1>
-    <p id="confirm" class="message"></p>
-    <p id="confirm_del" class="message_del"></p>
     <div>
         <nav>
             <ul>
@@ -20,6 +18,8 @@
                 <li><button class="nav" onclick="affiche_tri()">Recherche des produits par nom</button> </li>
             </ul>
         </nav>
+        <p id="confirm" class="message"></p>
+        <p id="confirm_del" class="message_del"></p>
         <input id="produit" type="text" placeholder="Nom du produit" > <input id="quantite" type="text" placeholder="Quantite de produit" > <button id="ajouter" type="submit" >Ajouter</button>
         <input type="text" id="recherche" onkeyup="trier_table()" placeholder="Recherche par nom de produit">
         <table id="table_produits">
