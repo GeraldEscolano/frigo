@@ -56,7 +56,7 @@ function ajouter() {
         qte: quantite = document.getElementById("quantite").value
     }
 
-    if(produit.qte <= 0 || produit.nom=="") { throw new Error("La quantité est forcément un entier positif"); }
+    if(produit.qte <= 0 || produit.nom=="" || produit.nom.toUpperCase() == produit.nom ){ throw new Error("La quantité est forcément un entier positif"); }
 
     let myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
