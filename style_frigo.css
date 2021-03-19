@@ -32,12 +32,12 @@ table{
 table thead{
     background-color:dodgerblue;
     color: darkblue;
-    
 }
 
 table tbody{
     background-color: lightskyblue;
     text-align: center;
+    color:darkblue;
 }
 
 table, th, tr, td{
@@ -88,6 +88,7 @@ button{
 }
 button:hover{
     border:2px solid grey;
+    cursor:pointer;
 }
 
 button#plus{

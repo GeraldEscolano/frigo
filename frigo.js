@@ -197,12 +197,10 @@ function trier_table() {
         produit.style.display = "none";
         quantite.style.display = "none";
         ajoute.style.display = "none";
-        return false;
     }else{
         produit.style.display = "";
         quantite.style.display = "";
         ajoute.style.display = "";
-        return true;
     }
   }
 
@@ -210,9 +208,7 @@ function trier_table() {
     var r = document.getElementById("recherche");
     if(r.style.display == "" ){
         r.style.display = "none";
-        return false;
     }else{
         r.style.display = "";
-        return true;
     }
   }
